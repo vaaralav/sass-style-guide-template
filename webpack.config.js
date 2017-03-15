@@ -6,7 +6,7 @@ const extractStylesPlugin = new ExtractTextPlugin('[name].css');
 export default {
 	entry: ['./src/index.js'],
 	output: {
-		path: __dirname + '/build',
+		path: __dirname,
 		publicPath: '/',
 		filename: '[name].js',
 		chunkFilename: '[id].js'
