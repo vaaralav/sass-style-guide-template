@@ -25,6 +25,7 @@
   "scripts": {
     "build": "node -r babel-register node_modules/.bin/webpack -p",
     "dev": "node -r babel-register node_modules/.bin/webpack-dev-server",
-    "start": "yarn run dev"
+    "start": "yarn run dev",
+    "install": "cp -p precommit.sh .git/hooks/pre-commit"
   }
 }

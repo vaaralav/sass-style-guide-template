@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 yarn run build
-RETVAL=$?
 
-if [ $RETVAL -ne 0 ]
+if [ $? -eq 0 ]
 then
-  exit 1
+  git add index.html main.js main.css
+  exit 0
 fi
-git add index.html main.js main.css
+exit 1
