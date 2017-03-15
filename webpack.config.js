@@ -7,7 +7,7 @@ export default {
 	entry: ['./src/index.js'],
 	output: {
 		path: __dirname,
-		publicPath: '/',
+		publicPath: '/sass-style-guide-template/',
 		filename: '[name].js',
 		chunkFilename: '[id].js'
 	},
