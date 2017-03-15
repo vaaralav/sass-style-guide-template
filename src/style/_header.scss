@@ -1,0 +1,22 @@
+header {
+  background: $header-background;
+  color: $header-text;
+  padding: $gutter $gutter/2;
+
+  @media (min-width: $bp-sm) {
+    padding: $gutter 2*$gutter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $primary-text;
+  }
+
+  a {
+    color: $primary-text;
+
+    &:hover {
+      color: lighten($primary-text, 30);
+
+    }
+  }
+}

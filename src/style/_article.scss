@@ -1,0 +1,7 @@
+article {
+  padding: $gutter 0;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $secondary-background;
+  }
+}

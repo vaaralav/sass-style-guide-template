@@ -1,0 +1,29 @@
+body {
+  background: $primary-background;
+  color: $primary-text;
+  font: $primary-font;
+}
+
+a {
+  $link-color: $secondary-text;
+  color: $link-color;
+  font: $secondary-font;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($link-color, 30);
+  }
+
+  &:active {
+    position: relative;
+    top: -1px;
+  }
+}
+
+main {
+  padding: $gutter $gutter/2;
+  @media (min-width: $bp-sm) {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
